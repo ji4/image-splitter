@@ -41,13 +41,13 @@ sudo yum install imagemagick
 First, make the script executable:
 
 ```bash
-chmod +x image-split-script.sh
+chmod +x image-splitter.sh
 ```
 
 To process an image with automatic splitting:
 
 ```bash
-./image-split-script.sh /path/to/your/image.jpg
+./image-splitter.sh /path/to/your/image.jpg
 ```
 
 ### Specifying Split Count
@@ -55,7 +55,7 @@ To process an image with automatic splitting:
 To split an image into a specific number of parts:
 
 ```bash
-./image-split-script.sh /path/to/your/image.jpg 2
+./image-splitter.sh /path/to/your/image.jpg 2
 ```
 
 This example splits the image into 2 equal parts.
@@ -75,7 +75,7 @@ The script follows these steps:
 ### Example 1: Automatic Splitting
 
 ```bash
-./image-split-script.sh large_panorama.jpg
+./image-splitter.sh large_panorama.jpg
 ```
 
 Output:
@@ -150,7 +150,7 @@ Vertical split (height direction):
    - Check that the file path is correct and the image exists.
 
 3. **Permission denied**
-   - Make sure the script is executable: `chmod +x image-split-script.sh`
+   - Make sure the script is executable: `chmod +x image-splitter.sh`
 
 ## Notes
 
